@@ -61,4 +61,33 @@ body{
             }
         }
     }
+    .titulo{
+        h1{
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 36px;
+            color: #060A24;
+            letter-spacing: 0;
+            line-height: 42px;
+            margin-left: 16px;
+            span{
+                display: block;
+            }
+        }
+        p{
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 14px;
+            color: #060A24;
+            letter-spacing: 0;
+            line-height: 22px;
+            margin: 16px;
+        }
+        input{
+            display: flex;
+            font-family: 'IBM Plex Mono', monospace;
+            height: 24px;
+            width: 108px;
+            padding: 16px 59px;
+
+        }
+    }
 }

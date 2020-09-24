@@ -96,4 +96,36 @@ body header nav #toggle:checked ~ .sections {
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
+
+body .titulo h1 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 36px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 42px;
+  margin-left: 16px;
+}
+
+body .titulo h1 span {
+  display: block;
+}
+
+body .titulo p {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin: 16px;
+}
+
+body .titulo input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'IBM Plex Mono', monospace;
+  height: 24px;
+  width: 108px;
+  padding: 16px 59px;
+}
 /*# sourceMappingURL=style.css.map */
