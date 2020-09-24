@@ -1,5 +1,6 @@
 body{
     width: 20rem;
+    margin: 0;
     header{
         background-color: #ffffff;
         width: 20rem;
@@ -8,16 +9,12 @@ body{
         nav{
             display: flex;
             justify-content: space-between; 
-            padding: 10px; 
             flex-wrap: wrap;
-
-            /**/
             width: 100%;
-            /**/
-
             img{
                 padding-top: 0.63em;
                 padding-bottom: 0.63em;
+                margin-left: 16px;
                 width: 1.5rem;
                 height: 1.5rem;
                 justify-items: flex-start;
@@ -25,9 +22,15 @@ body{
             .menu {
                 color: black;
                 padding-right: 3px;
-            }
-            .menu::before{
-                content: "☰";
+                align-self: center;
+                display: flex;
+                flex-direction: column;
+                .raya{
+                    height: 2px;
+                    width: 18px;
+                    background-color: black;
+                    margin-top: 3px;
+                }
             }
             .sections {
                 display: none;
@@ -35,16 +38,11 @@ body{
                 color: white;
                 font-family: 'IBM Plex Mono', monospace;
                 font-size: 16px;
-                margin-top: 42px; 
-                padding-left: 5px;
-                margin-left: -90%;
                 flex-wrap: wrap;
-
-                /**/
                 width: 100%;
-                margin-left: 0;
-                /**/
-
+                margin: 0;
+                justify-content: flex-start;
+                padding-left: 0;
                 li{
                     padding: 8px;
                     list-style: none;

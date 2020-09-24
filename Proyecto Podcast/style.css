@@ -1,6 +1,6 @@
-@charset "UTF-8";
 body {
   width: 20rem;
+  margin: 0;
 }
 
 body header {
@@ -21,17 +21,15 @@ body header nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  /**/
   width: 100%;
-  /**/
 }
 
 body header nav img {
   padding-top: 0.63em;
   padding-bottom: 0.63em;
+  margin-left: 16px;
   width: 1.5rem;
   height: 1.5rem;
   justify-items: flex-start;
@@ -40,10 +38,22 @@ body header nav img {
 body header nav .menu {
   color: black;
   padding-right: 3px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-body header nav .menu::before {
-  content: "☰";
+body header nav .menu .raya {
+  height: 2px;
+  width: 18px;
+  background-color: black;
+  margin-top: 3px;
 }
 
 body header nav .sections {
@@ -52,15 +62,14 @@ body header nav .sections {
   color: white;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 16px;
-  margin-top: 42px;
-  padding-left: 5px;
-  margin-left: -90%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  /**/
   width: 100%;
-  margin-left: 0;
-  /**/
+  margin: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 0;
 }
 
 body header nav .sections li {
