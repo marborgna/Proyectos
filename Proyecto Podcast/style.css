@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   width: 20rem;
 }
@@ -5,7 +6,6 @@ body {
 body header {
   background-color: #ffffff;
   width: 20rem;
-  height: 2.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,121 +14,77 @@ body header {
           justify-content: space-between;
 }
 
-body header img {
-  padding: 0.63em 17.5em 0.63em 1em;
+body header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /**/
+  width: 100%;
+  /**/
+}
+
+body header nav img {
+  padding-top: 0.63em;
+  padding-bottom: 0.63em;
   width: 1.5rem;
   height: 1.5rem;
   justify-items: flex-start;
 }
 
-body header #menutoggle {
-  display: block;
-  position: relative;
-  top: 50px;
-  left: 50px;
-  z-index: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
+body header nav .menu {
+  color: black;
+  padding-right: 3px;
 }
 
-body header #menutoggle a {
-  text-decoration: none;
-  color: #232323;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
+body header nav .menu::before {
+  content: "☰";
 }
 
-body header #menutoggle a:hover {
-  color: tomato;
-}
-
-body header #menutoggle input {
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  cursor: pointer;
-  opacity: 0;
-  z-index: 2;
-}
-
-body header #menutoggle input:checked ~ ul {
-  -webkit-transform: none;
-          transform: none;
-}
-
-body header #menutoggle input:checked ~ span {
-  opacity: 1;
-  -webkit-transform: rotate(45deg) translate(-2px, -1px);
-          transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-body header #menutoggle input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
-          transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-body header #menutoggle input:checked ~ span:nth-last-child(2) {
-  -webkit-transform: rotate(-45deg) translate(0, -1px);
-          transform: rotate(-45deg) translate(0, -1px);
-}
-
-body header #menutoggle span {
-  display: block;
-  width: 18px;
-  height: 2px;
-  margin-bottom: 5px;
-  position: relative;
-  background: #FFFFFF;
-  border-radius: 3px;
-  z-index: 1;
-  -webkit-transform-origin: 4px 0px;
-          transform-origin: 4px 0px;
-  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  background: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  opacity: 0.55s ease;
-}
-
-body header #menutoggle span:first-child {
-  -webkit-transform-origin: 0%;
-          transform-origin: 0%;
-}
-
-body header #menutoggle span:nth-last-child(2) {
-  -webkit-transform-origin: 0% 100%;
-          transform-origin: 0% 100%;
-}
-
-body header #menutoggle menu {
-  position: absolute;
-  width: 320px;
-  height: 224px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
+body header nav .sections {
+  display: none;
   background-color: #0000EC;
-  list-style-type: none;
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-  -webkit-transform: translate(-100%, 0);
-          transform: translate(-100%, 0);
-  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  color: white;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  margin-top: 42px;
+  padding-left: 5px;
+  margin-left: -90%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /**/
+  width: 100%;
+  margin-left: 0;
+  /**/
 }
 
-body header #menutoggle menu li {
-  padding: 10px 0;
-  font-size: 22px;
+body header nav .sections li {
+  padding: 8px;
+  list-style: none;
+}
+
+body header nav .sections li:nth-last-child(1) {
+  padding-bottom: 8px;
+}
+
+body header nav #toggle {
+  display: none;
+}
+
+body header nav #toggle:checked ~ .sections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 /*# sourceMappingURL=style.css.map */
