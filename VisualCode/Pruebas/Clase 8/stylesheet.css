@@ -1,0 +1,13 @@
+.caja {
+    width: 400px;
+    height: 400px;
+    background-color: rgba(163, 165, 34, 0.719);
+    border: 1px solid;
+    margin 15px;
+    display: inline-block;
+}
+@media screen and (max-width: 800px) {
+    .caja{
+      display: block;
+    }
+  }

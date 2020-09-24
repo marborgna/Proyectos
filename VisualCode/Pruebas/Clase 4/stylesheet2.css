@@ -1,0 +1,43 @@
+h1 {
+    color: hsl(345, 50%, 41%);
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.dientes
+.web {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.fotos {
+    display: block-inline;
+}
+
+.pic1 {
+    height: 400px;
+    width: 300px;
+}
+
+.pic2 {
+    height: 400px;
+    width: 500px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    background: rgb(167,167,167);
+    background: radial-gradient(circle, rgba(167,167,167,1) 0%, rgba(70, 16, 117, 0.363) 47%, rgba(23, 212, 155, 0.685) 100%);
+    background-size: cover;
+}

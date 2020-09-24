@@ -1,0 +1,14 @@
+$bg-color: red;
+%extend my-extend {
+    width: 100px;
+    background-color: $bg-color;
+
+}
+
+.box1 {
+    @extend %my-extend;
+}
+
+.box2 {
+    @extend %my-extend;
+}

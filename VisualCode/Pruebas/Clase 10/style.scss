@@ -1,0 +1,34 @@
+html{
+    background-color: antiquewhite;
+    header{
+        display: index;
+        align-content: space-between;
+        flex-direction: row;
+        .logo{
+            height: 30px;
+            width: 30px;
+            justify-items: flex-start;
+        }
+        .nav{
+            justify-content: flex-end;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    }
+    .principal{
+        display: index;
+        flex-direction: row;
+        align-content: center;
+        .lista{
+            align-content: flex-end;
+        }
+        .cuadro{
+            display: index;
+            flex-direction: row;
+            .foto{
+                height: 150px;
+                width: 200px;
+                align-items: stretch;
+            }
+        }
+    }
+}

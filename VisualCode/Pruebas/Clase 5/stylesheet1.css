@@ -1,0 +1,10 @@
+.box {
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(orange,green);
+    transform: rotate(20deg);
+}
+
+.box:hover {
+    background-image: linear-gradient(green, orange)
+}
