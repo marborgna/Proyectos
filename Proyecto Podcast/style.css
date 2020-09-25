@@ -65,7 +65,8 @@ body header nav .sections {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  margin: 0;
+  margin-left: 3px;
+  margin-right: 3px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -107,7 +108,9 @@ body .titulo h1 {
 }
 
 body .titulo h1 span {
-  display: block;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  position: relative;
 }
 
 body .titulo p {
@@ -120,12 +123,18 @@ body .titulo p {
 }
 
 body .titulo input {
+  background-color: #00F3BB;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-family: 'IBM Plex Mono', monospace;
-  height: 24px;
-  width: 108px;
-  padding: 16px 59px;
+  height: 48px;
+  width: 288px;
+  padding: 13px 96px;
+  border: none;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 16px;
 }
 /*# sourceMappingURL=style.css.map */
