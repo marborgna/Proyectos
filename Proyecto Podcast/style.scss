@@ -1,5 +1,4 @@
-body{
-
+body {
     width: 20rem;
     margin: 0;
     header{
@@ -95,6 +94,31 @@ body{
             justify-items: center;
             align-content: center;
             margin: 16px;
+        }
+    }
+    .episodios{
+        grid-template-columns: [comienzo] 298px [final];
+        grid-template-rows: [primera] 225px [segunda] 225px [tercera] 225px [cuarta] 225px [quinta];
+
+        clip-path: polygon(0 0, 100% 1em, 100% 100%, 0 1em);
+        background-color: blue;
+
+        h1{
+            font-family: 'IBM Plex Sans', sans-serif;
+            margin-left: 16px;
+            margin-top: 64px;
+        }
+        .capitulos{
+            border-radius: 1%;
+            display: grid;
+            margin: 11px;
+        }
+        
+    }
+    .telefono{
+        img {
+        height: 519px;
+        width: 360px;
         }
     }
 }

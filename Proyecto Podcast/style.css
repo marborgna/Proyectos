@@ -137,4 +137,32 @@ body .titulo input {
       align-content: center;
   margin: 16px;
 }
+
+body .episodios {
+  -ms-grid-columns: [comienzo] 298px [final];
+      grid-template-columns: [comienzo] 298px [final];
+  -ms-grid-rows: [primera] 225px [segunda] 225px [tercera] 225px [cuarta] 225px [quinta];
+      grid-template-rows: [primera] 225px [segunda] 225px [tercera] 225px [cuarta] 225px [quinta];
+  -webkit-clip-path: polygon(0 0, 100% 1em, 100% 100%, 0 1em);
+          clip-path: polygon(0 0, 100% 1em, 100% 100%, 0 1em);
+  background-color: blue;
+}
+
+body .episodios h1 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin-left: 16px;
+  margin-top: 64px;
+}
+
+body .episodios .capitulos {
+  border-radius: 1%;
+  display: -ms-grid;
+  display: grid;
+  margin: 11px;
+}
+
+body .telefono img {
+  height: 519px;
+  width: 360px;
+}
 /*# sourceMappingURL=style.css.map */
