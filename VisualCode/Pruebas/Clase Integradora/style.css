@@ -1,0 +1,25 @@
+.productoimagen {
+  width: 1400px;
+}
+
+.productoimagen .texto {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.productoimagen .texto span {
+  color: #1d1d1f;
+  font-size: 45px;
+  background-size: 113px 26px;
+  width: 113px;
+  height: 26px;
+}
+
+.productoimagen .texto h3 {
+  color: black;
+}
+
+.productoimagen .imagencelu img {
+  width: 346px;
+  height: 420px;
+}
+/*# sourceMappingURL=style.css.map */

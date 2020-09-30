@@ -1,9 +1,21 @@
+/*Variables*/
+$main-color-grad: linear-gradient(99deg, rgba(0,0,255,1) 0%, rgba(0,0,163,1) 100%);
+$main-color-blue: #0000EC;
+$main-color-green: #00F3BB;
+$main-color-white: #ffffff;
+$main-color-black: #060A24;
+$main-mono-plex: 'IBM Plex Mono', monospace;
+$main-mono-sans: 'IBM Plex Sans', sans-serif;
+$main-font-size: 36px;
+
+
+
 body {
-    width: 20rem;
+    width: 320px;
     margin: 0;
     header{
-        background-color: #ffffff;
-        width: 20rem;
+        background-color: $main-color-white;
+        width: 320px;
         display: flex;
         justify-content: space-between;
         nav{
@@ -12,15 +24,15 @@ body {
             flex-wrap: wrap;
             width: 100%;
             img{
-                padding-top: 0.63em;
-                padding-bottom: 0.63em;
+                padding-top: 10px;
+                padding-bottom: 10px;
                 margin-left: 16px;
-                width: 1.5rem;
-                height: 1.5rem;
+                width: 24px;
+                height: 24px;
                 justify-items: flex-start;
             }
             .menu {
-                color: black;
+                color: $main-color-black;
                 padding-right: 3px;
                 align-self: center;
                 display: flex;
@@ -28,15 +40,15 @@ body {
                 .raya{
                     height: 2px;
                     width: 18px;
-                    background-color: black;
+                    background-color: $main-color-black;
                     margin-top: 3px;
                 }
             }
             .sections {
                 display: none;
-                background-color: #0000EC;
-                color: white;
-                font-family: 'IBM Plex Mono', monospace;
+                background-color: $main-color-blue;
+                color: $main-color-white;
+                font-family: $main-mono-plex;
                 font-size: 16px;
                 flex-wrap: wrap;
                 width: 100%;
@@ -64,9 +76,9 @@ body {
     }
     .titulo{
         h1{
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 36px;
-            color: #060A24;
+            font-family: $main-mono-sans;
+            font-size: $main-font-size;
+            color: $main-color-black;
             letter-spacing: 0;
             line-height: 42px;
             margin-left: 16px;
@@ -76,17 +88,17 @@ body {
             }
         }
         p{
-            font-family: 'IBM Plex Mono', monospace;
+            font-family: $main-mono-plex;
             font-size: 14px;
-            color: #060A24;
+            color: $main-color-black;
             letter-spacing: 0;
             line-height: 22px;
             margin: 16px;
         }
         input{
-            background-color: #00F3BB;
+            background-color: $main-color-green;
             display: flex;
-            font-family: 'IBM Plex Mono', monospace;
+            font-family: $main-mono-plex;
             height: 48px;
             width: 288px;
             padding: 13px 96px;
@@ -97,28 +109,111 @@ body {
         }
     }
     .episodios{
-        grid-template-columns: [comienzo] 298px [final];
-        grid-template-rows: [primera] 225px [segunda] 225px [tercera] 225px [cuarta] 225px [quinta];
-
-        clip-path: polygon(0 0, 100% 1em, 100% 100%, 0 1em);
-        background-color: blue;
-
+        clip-path: polygon(0 9%, 100% 0, 100% 91%, 0% 100%);
+        background: $main-color-grad;
+        z-index: -1;
         h1{
-            font-family: 'IBM Plex Sans', sans-serif;
+            font-family: $main-mono-sans;
+            font-size: $main-font-size;
             margin-left: 16px;
             margin-top: 64px;
+            z-index: 1;
         }
         .capitulos{
+            width: 320px;
             border-radius: 1%;
             display: grid;
             margin: 11px;
+            z-index: 1;
         }
         
     }
     .telefono{
         img {
-        height: 519px;
-        width: 360px;
+            margin-top: 48px;
+            height: 519px;
+            width: 360px;
+        }
+        .venimos {
+            width: 320px;
+            align-content: center;
+            margin-top: 27px;
+            margin-left: 16px;
+            margin-right: 16px;
+            h1{
+                font-family: $main-mono-sans;
+                font-size: $main-font-size;
+                span{
+                    display: block;
+                }
+            }
+            p{
+                font-family: $main-mono-plex;
+                white-space: pre-line;
+            }
+        }
+    }
+    .invitadxs{
+        h1{
+            font-family: $main-mono-sans;
+            font-size: $main-font-size;
+            margin-top: 54px;
+            margin-bottom: 14px;
+            margin-left: 16px;
+            span{
+                display: block;
+            }
+        }
+        img{
+            width: 320px;
+            height: 243px;
+            margin: none;
+        }
+    }
+    .temas{
+        margin-left: 16px;
+        h1{
+            font-size: $main-font-size;
+            font-family: $main-mono-sans;
+            margin-top: 48px;
+            margin-bottom: 37px;
+            span{
+                display: block;
+            }
+        }
+        .algunostemas{
+            h4{
+                font-family: $main-mono-sans;
+                font-weight: bold;
+            }
+        }
+    }
+    .novedades{
+        h1{
+            font-family: $main-mono-sans;
+            font-size: $main-font-size;
+            margin-top: 106px;
+            margin-left: 16px;
+            justify-self: center;
+        }
+        input{
+            background-color: $main-color-green;
+            display: flex;
+            font-family: $main-mono-plex;
+            height: 48px;
+            width: 288px;
+            padding: 13px 96px;
+            border: none;
+            justify-items: center;
+            align-content: center;
+            margin: 16px;
+        }
+    }
+    footer{
+        h5{
+            font-family: $main-mono-plex;
+            font-size: 14px;
+            align-items: center;
         }
     }
 }
