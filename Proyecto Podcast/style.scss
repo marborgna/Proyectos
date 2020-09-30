@@ -7,7 +7,10 @@ $main-color-black: #060A24;
 $main-mono-plex: 'IBM Plex Mono', monospace;
 $main-mono-sans: 'IBM Plex Sans', sans-serif;
 $main-font-size: 36px;
-
+$fa-font-path:  "font/webfonts";
+@import "./font/scss/fontawesome.scss";
+@import "./font/scss/solid.scss";
+@import "./font/scss/brands.scss";
 
 
 body {
@@ -109,22 +112,23 @@ body {
         }
     }
     .episodios{
-        clip-path: polygon(0 9%, 100% 0, 100% 91%, 0% 100%);
+        clip-path: polygon(0 50px, 100% 0, 100% 100%, 0% 100%);
         background: $main-color-grad;
-        z-index: -1;
+        margin-top: 24px;
+        padding-top: 64px;
         h1{
             font-family: $main-mono-sans;
             font-size: $main-font-size;
+            color: $main-color-white;
             margin-left: 16px;
-            margin-top: 64px;
-            z-index: 1;
         }
         .capitulos{
-            width: 320px;
+            width: 298px;
+            height: 225px;
             border-radius: 1%;
-            display: grid;
-            margin: 11px;
-            z-index: 1;
+            display: block;
+            margin: 16px auto;
+            position: relative;
         }
         
     }
@@ -132,7 +136,7 @@ body {
         img {
             margin-top: 48px;
             height: 519px;
-            width: 360px;
+            width: 320px;
         }
         .venimos {
             width: 320px;
@@ -171,27 +175,41 @@ body {
         }
     }
     .temas{
-        margin-left: 16px;
         h1{
             font-size: $main-font-size;
             font-family: $main-mono-sans;
             margin-top: 48px;
             margin-bottom: 37px;
+            margin-left: 16px;
+            display: block;
             span{
                 display: block;
             }
         }
-        .algunostemas{
+        .iconos-temas{
+            img {
+                display: block;
+                margin: 0 auto;
+            }
             h4{
+                font-size: 24px;
                 font-family: $main-mono-sans;
                 font-weight: bold;
+                margin: 16px auto;
+                width: 288px;
+                height: 32px;
+                display: block;
+                align-self: center;
             }
         }
     }
     .novedades{
+        background: $main-color-grad;
+        clip-path: polygon(0 6%, 100% 0, 100% 100%, 0% 100%);
         h1{
             font-family: $main-mono-sans;
             font-size: $main-font-size;
+            color: $main-color-white;
             margin-top: 106px;
             margin-left: 16px;
             justify-self: center;
@@ -206,14 +224,59 @@ body {
             border: none;
             justify-items: center;
             align-content: center;
-            margin: 16px;
+            margin: 36px 16px 67px 16px;
         }
     }
     footer{
+        display: flex;
+        height: 341px;
         h5{
             font-family: $main-mono-plex;
-            font-size: 14px;
-            align-items: center;
+            font-size: 12px;
+            color: $main-color-black;
+            display: block;
         }
-    }
+        .twitter {
+            @extend %fa-icon;
+            @extend .fab;
+
+            &:before {
+                content: fa-content($fa-var-twitter);
+            }
+
+        }
+        .spotify{
+            @extend %fa-icon;
+            @extend .fab;
+
+            &:before {
+                content: fa-content($fa-var-spotify);
+            }
+        }
+        .instagram{
+            @extend %fa-icon;
+            @extend .fab;
+
+            &:before {
+                content: fa-content($fa-var-instagram);
+            }
+        }
+        }
+        .facebook{
+            @extend %fa-icon;
+            @extend .fab;
+
+            &:before {
+                content: fa-content($fa-var-facebook);
+            }
+        }
+        .telegram{
+            @extend %fa-icon;
+            @extend .fab;
+
+            &:before {
+                content: fa-content($fa-var-telegram);
+            }
+        }
+        
 }
