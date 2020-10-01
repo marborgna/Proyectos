@@ -261,7 +261,6 @@ body {
                 content: fa-content($fa-var-instagram);
             }
         }
-        }
         .facebook{
             @extend %fa-icon;
             @extend .fab;
@@ -278,5 +277,5 @@ body {
                 content: fa-content($fa-var-telegram);
             }
         }
-        
+    }    
 }

@@ -12,8 +12,8 @@
 body footer .twitter,
 body footer .spotify,
 body footer .instagram,
-body .facebook,
-body .telegram {
+body footer .facebook,
+body footer .telegram {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -23,7 +23,7 @@ body .telegram {
   line-height: 1;
 }
 
-body footer .twitter, body footer .spotify, body footer .instagram, body .facebook, body .telegram {
+body footer .twitter, body footer .spotify, body footer .instagram, body footer .facebook, body footer .telegram {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -132,8 +132,8 @@ body footer .twitter, body footer .spotify, body footer .instagram, body .facebo
 body footer .fa-pull-left.twitter,
 body footer .fa-pull-left.spotify,
 body footer .fa-pull-left.instagram,
-body .fa-pull-left.facebook,
-body .fa-pull-left.telegram {
+body footer .fa-pull-left.facebook,
+body footer .fa-pull-left.telegram {
   margin-right: .3em;
 }
 
@@ -145,8 +145,8 @@ body .fa-pull-left.telegram {
 body footer .fa-pull-right.twitter,
 body footer .fa-pull-right.spotify,
 body footer .fa-pull-right.instagram,
-body .fa-pull-right.facebook,
-body .fa-pull-right.telegram {
+body footer .fa-pull-right.facebook,
+body footer .fa-pull-right.telegram {
   margin-left: .3em;
 }
 
@@ -6152,8 +6152,8 @@ readers do not read off random characters that represent icons */
 body footer .twitter,
 body footer .spotify,
 body footer .instagram,
-body .facebook,
-body .telegram {
+body footer .facebook,
+body footer .telegram {
   font-family: 'Font Awesome 5 Brands';
   font-weight: 400;
 }
@@ -6458,11 +6458,11 @@ body footer .instagram:before {
   content: "\f16d";
 }
 
-body .facebook:before {
+body footer .facebook:before {
   content: "\f09a";
 }
 
-body .telegram:before {
+body footer .telegram:before {
   content: "\f2c6";
 }
 /*# sourceMappingURL=style.css.map */
