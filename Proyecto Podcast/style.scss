@@ -47,6 +47,13 @@ body {
                     margin-top: 3px;
                 }
             }
+            .menu:hover{
+                clip-path: polygon(10% 0, 0 10%, 40% 51%, 0 90%, 10% 100%, 50% 60%, 90% 100%, 100% 90%, 60% 50%, 100% 10%, 90% 0, 50% 40%);
+                color: $main-color-black;
+                height: 14px;
+                width: 14px;
+                display: inline;
+            }
             .sections {
                 display: none;
                 background-color: $main-color-blue;
@@ -110,12 +117,16 @@ body {
             align-content: center;
             margin: 16px;
         }
+        input:hover{
+            background: linear-gradient(239deg, rgba(0,0,254,1) 0%, rgba(0,240,184,1) 100%);
+        }
     }
     .episodios{
-        clip-path: polygon(0 50px, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 4%, 100% 0, 100% 96%, 0% 100%);
         background: $main-color-grad;
         margin-top: 24px;
         padding-top: 64px;
+        height: 1203.5px;
         h1{
             font-family: $main-mono-sans;
             font-size: $main-font-size;
@@ -128,7 +139,6 @@ body {
             border-radius: 1%;
             display: block;
             margin: 16px auto;
-            position: relative;
         }
         
     }
@@ -137,6 +147,10 @@ body {
             margin-top: 48px;
             height: 519px;
             width: 320px;
+            transform: translateY(-150px);
+            .vertical-translation {
+            transform: translateY(-150px);  
+        }
         }
         .venimos {
             width: 320px;
@@ -156,6 +170,11 @@ body {
                 white-space: pre-line;
             }
         }
+        /*transform: translateY(-150px);
+        .vertical-translation {
+        transform: translateY(-150px);  
+        }
+        */
     }
     .invitadxs{
         h1{
@@ -205,14 +224,17 @@ body {
     }
     .novedades{
         background: $main-color-grad;
-        clip-path: polygon(0 6%, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 4%, 100% 0, 100% 100%, 0% 100%);
+        height: 341px;
         h1{
             font-family: $main-mono-sans;
             font-size: $main-font-size;
             color: $main-color-white;
-            margin-top: 106px;
+            height: 126px;
+            width: 288px;
+            margin-top: 64px;
             margin-left: 16px;
-            justify-self: center;
+            align-self: center;
         }
         input{
             background-color: $main-color-green;
@@ -220,62 +242,79 @@ body {
             font-family: $main-mono-plex;
             height: 48px;
             width: 288px;
-            padding: 13px 96px;
             border: none;
             justify-items: center;
-            align-content: center;
+            align-items: center;
             margin: 36px 16px 67px 16px;
+            padding: 16px 59px;
+        }
+        input:hover{
+            background: linear-gradient(239deg, rgba(0,0,254,1) 0%, rgba(0,240,184,1) 100%);
         }
     }
     footer{
-        display: flex;
+        display: grid;
         height: 341px;
         h5{
             font-family: $main-mono-plex;
             font-size: 12px;
+            margin-left: 47px;
+            margin-top: 24px;
             color: $main-color-black;
-            display: block;
         }
-        .twitter {
-            @extend %fa-icon;
-            @extend .fab;
+        ul{
 
-            &:before {
-                content: fa-content($fa-var-twitter);
+            li{
+                list-style: none;
+                .twitter {
+                    @extend %fa-icon;
+                    @extend .fab;
+
+                    &:before {
+                        content: fa-content($fa-var-twitter);
+                    }
+                }
             }
+            li{
+                .spotify{
+                    @extend %fa-icon;
+                    @extend .fab;
 
-        }
-        .spotify{
-            @extend %fa-icon;
-            @extend .fab;
+                    &:before {
+                        content: fa-content($fa-var-spotify);
+                    }
+                }
+            }
+            li{    
+                .instagram{
+                    @extend %fa-icon;
+                    @extend .fab;
 
-            &:before {
-                content: fa-content($fa-var-spotify);
+                    &:before {
+                        content: fa-content($fa-var-instagram);
+                    }
+                }
+            }
+            li{
+                .facebook{
+                    @extend %fa-icon;
+                    @extend .fab;
+
+                    &:before {
+                        content: fa-content($fa-var-facebook);
+                    }
+                }
+            }
+            li{
+                .telegram{
+                    @extend %fa-icon;
+                    @extend .fab;
+
+                    &:before {
+                        content: fa-content($fa-var-telegram);
+                    }
+                }
             }
         }
-        .instagram{
-            @extend %fa-icon;
-            @extend .fab;
-
-            &:before {
-                content: fa-content($fa-var-instagram);
-            }
-        }
-        .facebook{
-            @extend %fa-icon;
-            @extend .fab;
-
-            &:before {
-                content: fa-content($fa-var-facebook);
-            }
-        }
-        .telegram{
-            @extend %fa-icon;
-            @extend .fab;
-
-            &:before {
-                content: fa-content($fa-var-telegram);
-            }
-        }
-    }    
+    }
 }
