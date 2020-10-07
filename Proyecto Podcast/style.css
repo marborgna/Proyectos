@@ -6216,13 +6216,13 @@ body header nav .menu .raya {
   margin-top: 3px;
 }
 
-body header nav .menu:hover {
+body header nav .menu .cuadrado {
+  display: none;
+  background-color: #060A24;
+  width: 14px;
+  height: 14px;
   -webkit-clip-path: polygon(10% 0, 0 10%, 40% 51%, 0 90%, 10% 100%, 50% 60%, 90% 100%, 100% 90%, 60% 50%, 100% 10%, 90% 0, 50% 40%);
           clip-path: polygon(10% 0, 0 10%, 40% 51%, 0 90%, 10% 100%, 50% 60%, 90% 100%, 100% 90%, 60% 50%, 100% 10%, 90% 0, 50% 40%);
-  color: #060A24;
-  height: 14px;
-  width: 14px;
-  display: inline;
 }
 
 body header nav .sections {
@@ -6265,6 +6265,23 @@ body header nav #toggle:checked ~ .sections {
           flex-flow: column;
   -ms-flex-item-align: start;
       align-self: flex-start;
+}
+
+body header nav #toggle:checked ~ .sections .raya {
+  -webkit-clip-path: polygon(10% 0, 0 10%, 40% 51%, 0 90%, 10% 100%, 50% 60%, 90% 100%, 100% 90%, 60% 50%, 100% 10%, 90% 0, 50% 40%);
+          clip-path: polygon(10% 0, 0 10%, 40% 51%, 0 90%, 10% 100%, 50% 60%, 90% 100%, 100% 90%, 60% 50%, 100% 10%, 90% 0, 50% 40%);
+  color: #060A24;
+  height: 14px;
+  width: 14px;
+  display: inline;
+}
+
+body header nav #toggle:checked ~ .menu .raya {
+  display: none;
+}
+
+body header nav #toggle:checked ~ .menu .cuadrado {
+  display: inline-block;
 }
 
 body .titulo h1 {
@@ -6335,14 +6352,6 @@ body .episodios .capitulos {
   margin: 16px auto;
 }
 
-body .telefono {
-  /*transform: translateY(-150px);
-        .vertical-translation {
-        transform: translateY(-150px);  
-        }
-        */
-}
-
 body .telefono img {
   margin-top: 48px;
   height: 519px;
@@ -6366,6 +6375,7 @@ body .telefono .venimos {
 }
 
 body .telefono .venimos h1 {
+  margin-top: 27px;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 36px;
 }

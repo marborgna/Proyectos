@@ -46,13 +46,14 @@ body {
                     background-color: $main-color-black;
                     margin-top: 3px;
                 }
-            }
-            .menu:hover{
-                clip-path: polygon(10% 0, 0 10%, 40% 51%, 0 90%, 10% 100%, 50% 60%, 90% 100%, 100% 90%, 60% 50%, 100% 10%, 90% 0, 50% 40%);
-                color: $main-color-black;
-                height: 14px;
-                width: 14px;
-                display: inline;
+                .cuadrado {
+                    display: none;
+                    background-color: $main-color-black;
+                    width: 14px;
+                    height: 14px;
+                    clip-path: polygon(10% 0, 0 10%, 40% 51%, 0 90%, 10% 100%, 50% 60%, 90% 100%, 100% 90%, 60% 50%, 100% 10%, 90% 0, 50% 40%);
+                }
+                
             }
             .sections {
                 display: none;
@@ -80,10 +81,25 @@ body {
                     display: flex;
                     flex-flow: column;
                     align-self: flex-start;
+                    .raya{
+                        clip-path: polygon(10% 0, 0 10%, 40% 51%, 0 90%, 10% 100%, 50% 60%, 90% 100%, 100% 90%, 60% 50%, 100% 10%, 90% 0, 50% 40%);
+                        color: $main-color-black;
+                        height: 14px;
+                        width: 14px;
+                        display: inline;
+                    }
+                }
+                &:checked ~ .menu {
+                    .raya{
+                        display: none;
+                    }
+                    .cuadrado{
+                        display: inline-block;
+                    }
+                    }
                 }
             }
         }
-    }
     .titulo{
         h1{
             font-family: $main-mono-sans;
@@ -159,6 +175,7 @@ body {
             margin-left: 16px;
             margin-right: 16px;
             h1{
+                margin-top: 27px;
                 font-family: $main-mono-sans;
                 font-size: $main-font-size;
                 span{
@@ -170,11 +187,6 @@ body {
                 white-space: pre-line;
             }
         }
-        /*transform: translateY(-150px);
-        .vertical-translation {
-        transform: translateY(-150px);  
-        }
-        */
     }
     .invitadxs{
         h1{
