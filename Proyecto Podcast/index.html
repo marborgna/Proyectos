@@ -19,35 +19,40 @@
                     <div class="raya"></div>
                     <div class="cuadrado"></div>
                 </label>
-                <ul class="sections">
-                    <li><a>Episodios</a></li>
-                    <li><a>Nosotros</a></li>
-                    <li><a>Entrevistas</a></li>
-                    <li><a>Tópicos</a></li>
+                <ul class="sections" >
+                    <li><a href="#episodios">Episodios</a></li>
+                    <li><a href="#venimos">Nosotros</a></li>
+                    <li><a href="#invitadxs">Entrevistas</a></li>
+                    <li><a href="#temas">Tópicos</a></li>
                 </ul>
             </nav>
         </header>
         <section class="titulo">
-            <h1>Hello <span>world</span></br> pale blue dot</h1>
-            <p>Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
-            <input type="submit" value="CONOCÉ MÁS">
+            <div class="spacer"></div>
+            <div class="content">
+                <h1>Hello <span class="mundo">world</span></br> pale blue dot<span class="punto">.</span></h1>
+                <p>Un podcast que explora el mundo de la programación <span>y</br> la tecnología</span>. Nuevos episodios, todos los jueves cada 15 días.</p>
+                <input type="submit" value="CONOCÉ MÁS">
+            <div>
         </section>
-        <section class="episodios">
+        <section class="episodios" id="episodios">
             <h1>Episodios</h1>
-            <iframe class="capitulos" src="https://open.spotify.com/embed-podcast/show/0S1h5K7jm2YvOcM7y1ZMXY" height="232" width="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <iframe class="capitulos" src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" height="225" width="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <iframe class="capitulos" src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" height="225" width="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <iframe class="capitulos" src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" height="225" width="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <div class="embeds">
+                <iframe src="https://open.spotify.com/embed-podcast/show/0S1h5K7jm2YvOcM7y1ZMXY" width="584" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" width="584" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" width="584" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" width="584" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
         </section>
         <section class="telefono">
             <img src="img/phone.png">
-            <div class="venimos">
+            <div class="venimos" id="venimos">
             <h1><span>De dónde</span> venimos</h1>
             <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. </br>
                 Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
             </div>
             </section>
-        <section class="invitadxs">
+        <section class="invitadxs" id="invitadxs">
             <h1><span>Invitadas/os</span> estelares</h1>
             <img src="img/grace-hopper.png">
             <img src="img/Katie-Bouman.png">
@@ -56,7 +61,7 @@
             <img src="img/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png">
             <img src="img/susan-kare.png">
         </section>
-        <section class="temas">
+        <section class="temas" id="temas">
             <h1><span>Algunos de</span> nuestros temas</h1>
             <div class="iconos-temas">
                 <img src="img/icon1.svg">
