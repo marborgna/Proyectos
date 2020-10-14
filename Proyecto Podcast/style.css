@@ -6347,12 +6347,21 @@ body .episodios h1 {
   margin-left: 16px;
 }
 
-body .episodios .capitulos {
+body .episodios .embeds .capitulos {
+  position: relative;
+  padding-bottom: 3.5%;
+  height: 225px;
+  width: 298px;
+  overflow: hidden;
+  margin: 11px auto;
+}
+
+body .episodios .embeds .capitulos iframe {
+  position: absolute;
   border-radius: 1%;
   display: block;
-  margin: 16px auto;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
 }
 
 body .telefono img {
