@@ -6220,7 +6220,6 @@ body header nav .menu .cuadrado {
   background-color: #060A24;
   width: 14px;
   height: 14px;
-  margin-right: 16px;
   -webkit-clip-path: polygon(10% 0, 0 10%, 40% 51%, 0 90%, 10% 100%, 50% 60%, 90% 100%, 100% 90%, 60% 50%, 100% 10%, 90% 0, 50% 40%);
           clip-path: polygon(10% 0, 0 10%, 40% 51%, 0 90%, 10% 100%, 50% 60%, 90% 100%, 100% 90%, 60% 50%, 100% 10%, 90% 0, 50% 40%);
 }
@@ -6338,6 +6337,7 @@ body .episodios {
   margin-top: 24px;
   padding-top: 64px;
   height: 1203.5px;
+  width: 100%;
 }
 
 body .episodios h1 {
@@ -6351,10 +6351,8 @@ body .episodios .capitulos {
   border-radius: 1%;
   display: block;
   margin: 16px auto;
-}
-
-body .telefono {
-  height: 936px;
+  max-width: 100%;
+  height: auto;
 }
 
 body .telefono img {
@@ -6372,17 +6370,15 @@ body .telefono img .vertical-translation {
 }
 
 body .telefono .venimos {
-  width: 320px;
+  width: 100%;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin-top: 27px;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-bottom: 54px;
 }
 
 body .telefono .venimos h1 {
-  margin-top: 27px;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 36px;
 }
@@ -6394,6 +6390,7 @@ body .telefono .venimos h1 span {
 body .telefono .venimos p {
   font-family: "IBM Plex Mono", monospace;
   white-space: pre-line;
+  margin: 5%;
 }
 
 body .invitadxs h1 {
