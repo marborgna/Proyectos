@@ -466,11 +466,17 @@ body {
         }
         footer { 
             display: flex;
+            align-items: center;
+            justify-content: space space-around;
+            h5 {
+                display: flex;
+                justify-content: flex-start;
+            }
             ul {
-                justify-content: flex-end;
+                display: flex;
                 li {
                     flex-direction: row;
-                    
+                        
                 }
             }
         }
