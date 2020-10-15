@@ -284,19 +284,20 @@ body {
         }
     }
     footer{
-        display: grid;
-        height: 341px;
         h5{
             font-family: $main-mono-plex;
             font-size: 12px;
             margin-left: 47px;
             margin-top: 24px;
             color: $main-color-black;
+            display: block;
         }
         ul{
-
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            flex-direction: row;
             li{
-                list-style: none;
                 .twitter {
                     @extend %fa-icon;
                     @extend .fab;
@@ -355,6 +356,7 @@ body {
     body {
         header {
             nav {
+                display: flex;
                 img {
                 margin-left: 100px;
                 margin-top: 22px;
@@ -366,6 +368,7 @@ body {
                 }
                 .sections {
                     display: inline;
+                    justify-content: flex-end;
                     background-color: $main-color-white;
                     color: $main-color-black;
                     font-family: $main-mono-plex;
@@ -460,7 +463,15 @@ body {
         }
         .novedades {
         }
-        footer {
+        footer { 
+            display: flex;
+            ul {
+                justify-content: flex-end;
+                li {
+                    flex-direction: row;
+                    
+                }
+            }
         }
     }
 }

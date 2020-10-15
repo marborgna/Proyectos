@@ -6492,22 +6492,26 @@ body .novedades input:hover {
   background: linear-gradient(239deg, #0000fe 0%, #00f0b8 100%);
 }
 
-body footer {
-  display: -ms-grid;
-  display: grid;
-  height: 341px;
-}
-
 body footer h5 {
   font-family: "IBM Plex Mono", monospace;
   font-size: 12px;
   margin-left: 47px;
   margin-top: 24px;
   color: #060A24;
+  display: block;
 }
 
-body footer ul li {
+body footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   list-style: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 body footer ul li .twitter:before {
@@ -6531,6 +6535,11 @@ body footer ul li .telegram:before {
 }
 
 @media screen and (min-device-width: 500px) {
+  body header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   body header nav img {
     margin-left: 100px;
     margin-top: 22px;
@@ -6540,6 +6549,9 @@ body footer ul li .telegram:before {
   }
   body header nav .sections {
     display: inline;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     background-color: #ffffff;
     color: #060A24;
     font-family: "IBM Plex Mono", monospace;
@@ -6617,6 +6629,22 @@ body footer ul li .telegram:before {
     display: grid;
     width: 480px;
     height: 364px;
+  }
+  body footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body footer ul {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  body footer ul li {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 /*# sourceMappingURL=style.css.map */
