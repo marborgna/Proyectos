@@ -295,8 +295,9 @@ body {
         ul{
             display: flex;
             list-style: none;
-            justify-content: space-around;
+            justify-content: space-evenly;
             flex-direction: row;
+            padding-left: 0;
             li{
                 .twitter {
                     @extend %fa-icon;
