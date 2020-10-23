@@ -1,33 +1,31 @@
 /*Variables*/
-$main-color-grad: linear-gradient(99deg, rgba(0,0,255,1) 0%, rgba(0,0,163,1) 100%);
+
+$main-color-grad: linear-gradient(99deg, rgba(0, 0, 255, 1) 0%, rgba(0, 0, 163, 1) 100%);
 $main-color-blue: #0000EC;
 $main-color-green: #00F3BB;
 $main-color-white: #ffffff;
 $main-color-black: #060A24;
-$main-mono-plex: 'IBM Plex Mono', monospace;
-$main-mono-sans: 'IBM Plex Sans', sans-serif;
+$main-mono-plex: 'IBM Plex Mono',
+monospace;
+$main-mono-sans: 'IBM Plex Sans',
+sans-serif;
 $main-font-size: 36px;
-$fa-font-path:  "font/webfonts";
+$fa-font-path: "font/webfonts";
 @import "./font/scss/fontawesome.scss";
 @import "./font/scss/solid.scss";
 @import "./font/scss/brands.scss";
-
-
-
-    
-
 body {
     margin: 0;
-    header{
+    header {
         background-color: $main-color-white;
         display: flex;
         justify-content: space-between;
-        nav{
+        nav {
             display: flex;
-            justify-content: space-between; 
+            justify-content: space-between;
             flex-wrap: wrap;
-             width: 100%;
-            img{
+            width: 100%;
+            img {
                 padding-top: 10px;
                 padding-bottom: 10px;
                 margin-left: 16px;
@@ -42,7 +40,7 @@ body {
                 display: flex;
                 flex-direction: column;
                 margin-right: 19px;
-                .raya{
+                .raya {
                     height: 2px;
                     width: 18px;
                     background-color: $main-color-black;
@@ -55,13 +53,10 @@ body {
                     height: 14px;
                     clip-path: polygon(10% 0, 0 10%, 40% 51%, 0 90%, 10% 100%, 50% 60%, 90% 100%, 100% 90%, 60% 50%, 100% 10%, 90% 0, 50% 40%);
                 }
-                
             }
             .sections {
                 display: none;
                 background-color: $main-color-blue;
-                color: $main-color-white;
-                font-family: $main-mono-plex;
                 font-size: 16px;
                 flex-wrap: wrap;
                 width: 100%;
@@ -69,21 +64,25 @@ body {
                 margin-right: 3px;
                 justify-content: flex-start;
                 padding-left: 0;
-                li{
+                li {
                     padding: 8px;
                     list-style: none;
-                    &:nth-last-child(1){
+                    &:nth-last-child(1) {
                         padding-bottom: 8px;
+                    }
+                    a {
+                        color: $main-color-white;
+                        font-family: $main-mono-plex;
                     }
                 }
             }
             #toggle {
                 display: none;
-                &:checked ~ .sections{
+                &:checked~.sections {
                     display: flex;
                     flex-flow: column;
                     align-self: flex-start;
-                    .raya{
+                    .raya {
                         clip-path: polygon(10% 0, 0 10%, 40% 51%, 0 90%, 10% 100%, 50% 60%, 90% 100%, 100% 90%, 60% 50%, 100% 10%, 90% 0, 50% 40%);
                         color: $main-color-black;
                         height: 14px;
@@ -91,32 +90,32 @@ body {
                         display: inline;
                     }
                 }
-                &:checked ~ .menu {
-                    .raya{
+                &:checked~.menu {
+                    .raya {
                         display: none;
                     }
-                    .cuadrado{
+                    .cuadrado {
                         display: inline-block;
                     }
                 }
             }
         }
     }
-    .titulo{
-        .content{
-            h1{
+    .titulo {
+        .content {
+            h1 {
                 font-family: $main-mono-sans;
                 font-size: $main-font-size;
                 color: $main-color-black;
                 letter-spacing: 0;
                 line-height: 42px;
                 margin-left: 16px;
-                .mundo{
+                .mundo {
                     text-decoration-line: line-through;
-                    position: relative;                
+                    position: relative;
                 }
             }
-            p{
+            p {
                 font-family: $main-mono-plex;
                 font-size: 14px;
                 color: $main-color-black;
@@ -130,7 +129,7 @@ body {
                     display: none;
                 }
             }
-            input{
+            input {
                 display: block;
                 background-color: $main-color-green;
                 font-family: $main-mono-plex;
@@ -140,25 +139,25 @@ body {
                 border: none;
                 margin: 16px auto;
             }
-            input:hover{
-                background: linear-gradient(239deg, rgba(0,0,254,1) 0%, rgba(0,240,184,1) 100%);
+            input:hover {
+                background: linear-gradient(239deg, rgba(0, 0, 254, 1) 0%, rgba(0, 240, 184, 1) 100%);
             }
         }
     }
-    .episodios{
+    .episodios {
         clip-path: polygon(0 4%, 100% 0, 100% 96%, 0% 100%);
         background: $main-color-grad;
         margin-top: 24px;
         padding-top: 64px;
         height: 1203.5px;
         width: 100%;
-        h1{
+        h1 {
             font-family: $main-mono-sans;
             font-size: $main-font-size;
             color: $main-color-white;
             margin-left: 16px;
         }
-        .embeds {          
+        .embeds {
             .capitulos {
                 position: relative;
                 padding-bottom: 3.5%;
@@ -166,7 +165,7 @@ body {
                 width: 298px;
                 overflow: hidden;
                 margin: 11px auto;
-                iframe{
+                iframe {
                     position: absolute;
                     border-radius: 1%;
                     display: block;
@@ -174,9 +173,9 @@ body {
                     height: 100%;
                 }
             }
-        }        
+        }
     }
-    .telefono{
+    .telefono {
         img {
             margin-top: 48px;
             margin-bottom: none;
@@ -184,7 +183,7 @@ body {
             width: 320px;
             transform: translateY(-150px);
             .vertical-translation {
-                transform: translateY(-150px);  
+                transform: translateY(-150px);
             }
         }
         .venimos {
@@ -193,55 +192,55 @@ body {
             margin-left: 5%;
             margin-right: 5%;
             margin-bottom: 54px;
-            h1{
+            h1 {
                 font-family: $main-mono-sans;
                 font-size: $main-font-size;
-                span{
+                span {
                     display: block;
                 }
             }
-            p{
+            p {
                 font-family: $main-mono-plex;
                 white-space: pre-line;
                 margin: 5%;
             }
         }
     }
-    .invitadxs{
-        h1{
+    .invitadxs {
+        h1 {
             font-family: $main-mono-sans;
             font-size: $main-font-size;
             margin-top: 54px;
             margin-bottom: 14px;
             margin-left: 16px;
-            span{
+            span {
                 display: block;
             }
         }
-        img{
+        img {
             width: 320px;
             height: 243px;
             margin: none;
         }
     }
-    .temas{
-        h1{
+    .temas {
+        h1 {
             font-size: $main-font-size;
             font-family: $main-mono-sans;
             margin-top: 48px;
             margin-bottom: 37px;
             margin-left: 16px;
             display: block;
-            span{
+            span {
                 display: block;
             }
         }
-        .iconos-temas{
+        .iconos-temas {
             img {
                 display: block;
                 margin: 0 auto;
             }
-            h4{
+            h4 {
                 font-size: 24px;
                 font-family: $main-mono-sans;
                 font-weight: bold;
@@ -253,11 +252,11 @@ body {
             }
         }
     }
-    .novedades{
+    .novedades {
         background: $main-color-grad;
         clip-path: polygon(0 4%, 100% 0, 100% 100%, 0% 100%);
         height: 341px;
-        h1{
+        h1 {
             font-family: $main-mono-sans;
             font-size: $main-font-size;
             color: $main-color-white;
@@ -267,7 +266,7 @@ body {
             margin-left: 16px;
             align-self: center;
         }
-        input{
+        input {
             background-color: $main-color-green;
             display: flex;
             font-family: $main-mono-plex;
@@ -279,12 +278,12 @@ body {
             margin: 36px 16px 67px 16px;
             padding: 16px 59px;
         }
-        input:hover{
-            background: linear-gradient(239deg, rgba(0,0,254,1) 0%, rgba(0,240,184,1) 100%);
+        input:hover {
+            background: linear-gradient(239deg, rgba(0, 0, 254, 1) 0%, rgba(0, 240, 184, 1) 100%);
         }
     }
-    footer{
-        h5{
+    footer {
+        h5 {
             font-family: $main-mono-plex;
             font-size: 12px;
             margin-left: 47px;
@@ -292,57 +291,52 @@ body {
             color: $main-color-black;
             display: block;
         }
-        ul{
+        ul {
             display: flex;
             list-style: none;
             justify-content: space-evenly;
             flex-direction: row;
             padding-left: 0;
-            li{
+            li {
                 .twitter {
                     @extend %fa-icon;
                     @extend .fab;
-
                     &:before {
                         content: fa-content($fa-var-twitter);
                     }
                 }
             }
-            li{
-                .spotify{
+            li {
+                .spotify {
                     @extend %fa-icon;
                     @extend .fab;
-
                     &:before {
                         content: fa-content($fa-var-spotify);
                     }
                 }
             }
-            li{    
-                .instagram{
+            li {
+                .instagram {
                     @extend %fa-icon;
                     @extend .fab;
-
                     &:before {
                         content: fa-content($fa-var-instagram);
                     }
                 }
             }
-            li{
-                .facebook{
+            li {
+                .facebook {
                     @extend %fa-icon;
                     @extend .fab;
-
                     &:before {
                         content: fa-content($fa-var-facebook);
                     }
                 }
             }
-            li{
-                .telegram{
+            li {
+                .telegram {
                     @extend %fa-icon;
                     @extend .fab;
-
                     &:before {
                         content: fa-content($fa-var-telegram);
                     }
@@ -353,14 +347,13 @@ body {
 }
 
 @media screen and (min-device-width: 500px) {
-
     body {
         header {
             nav {
                 display: flex;
                 img {
-                margin-left: 100px;
-                margin-top: 22px;
+                    margin-left: 100px;
+                    margin-top: 22px;
                 }
                 .menu {
                     .raya {
@@ -382,17 +375,17 @@ body {
                 max-width: 200px;
                 flex: 1;
             }
-            .content{
+            .content {
                 h1 {
                     br {
                         display: none;
                     }
-                    .punto{
+                    .punto {
                         color: $main-color-blue;
                     }
                 }
                 p {
-                    span{
+                    span {
                         display: inline;
                     }
                     br {
@@ -411,22 +404,22 @@ body {
             }
             .embeds {
                 display: flex;
-                .capitulos {               
+                .capitulos {
                     flex-flow: wrap;
                     justify-content: space-around;
                     height: 232px;
                     width: 584px;
                     margin-left: 100px;
                     //margin-right: ;
-                    iframe{
+                    iframe {
                         position: absolute;
                         border-radius: 1%;
                         width: 100%;
-                        height: 100%; 
+                        height: 100%;
                     }
                 }
             }
-        }        
+        }
         .telefono {
             //display: flexbox;
             .spacer {
@@ -451,20 +444,16 @@ body {
             }
         }
         .invitadxs {
-            h1 {
-
-            }
+            h1 {}
             img {
                 display: grid;
                 width: 480px;
                 height: 364px;
             }
         }
-        .temas {
-        }
-        .novedades {
-        }
-        footer { 
+        .temas {}
+        .novedades {}
+        footer {
             display: flex;
             align-items: center;
             justify-content: space space-around;
@@ -476,7 +465,6 @@ body {
                 display: flex;
                 li {
                     flex-direction: row;
-                        
                 }
             }
         }

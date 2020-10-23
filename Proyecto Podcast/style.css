@@ -6227,8 +6227,6 @@ body header nav .menu .cuadrado {
 body header nav .sections {
   display: none;
   background-color: #0000EC;
-  color: #ffffff;
-  font-family: "IBM Plex Mono", monospace;
   font-size: 16px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -6248,6 +6246,11 @@ body header nav .sections li {
 
 body header nav .sections li:nth-last-child(1) {
   padding-bottom: 8px;
+}
+
+body header nav .sections li a {
+  color: #ffffff;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 body header nav #toggle {
