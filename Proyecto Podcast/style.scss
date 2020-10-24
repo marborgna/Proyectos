@@ -73,6 +73,7 @@ body {
                     a {
                         color: $main-color-white;
                         font-family: $main-mono-plex;
+                        text-decoration: none;
                     }
                 }
             }
@@ -243,19 +244,22 @@ body {
                 display: block;
             }
         }
-        .iconos-temas {
-            img {
-                display: block;
-                margin: 0 auto;
-            }
-            h4 {
-                font-size: 24px;
-                font-family: $main-mono-sans;
-                font-weight: bold;
-                margin: 16px auto;
-                width: 288px;
-                display: block;
-                text-align: center;
+        .todos-iconos {
+            .iconos-temas {
+                padding: 10px;
+                img {
+                    display: block;
+                    margin: 0 auto;
+                }
+                h4 {
+                    font-size: 24px;
+                    font-family: $main-mono-sans;
+                    font-weight: bold;
+                    margin: 16px auto;
+                    max-width: 288px;
+                    display: block;
+                    text-align: center;
+                }
             }
         }
     }
@@ -268,8 +272,6 @@ body {
             font-family: $main-mono-sans;
             font-size: $main-font-size;
             color: $main-color-white;
-            height: 126px;
-            width: 288px;
             margin-top: 64px;
             margin-left: auto;
             margin-right: auto;
@@ -489,23 +491,32 @@ body {
                     //display: none;
                 }
             }
-            .iconos-temas {
-                display: inline;
+            .todos-iconos {
+                display: flex;
+                justify-content: center;
+                .iconos-temas {
+                    display: inline;
+                }
             }
         }
-        .novedades {}
+        .novedades {
+
+        }
         footer {
             display: flex;
             align-items: center;
-            justify-content: space space-around;
+            justify-content: space-between;
+            padding: 0 100px;
             h5 {
                 display: flex;
                 justify-content: flex-start;
             }
             ul {
                 display: flex;
+                justify-content: space-between;
                 li {
                     flex-direction: row;
+                    margin: 0 18px;
                 }
             }
         }

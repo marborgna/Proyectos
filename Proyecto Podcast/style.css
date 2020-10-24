@@ -6251,6 +6251,7 @@ body header nav .sections li:nth-last-child(1) {
 body header nav .sections li a {
   color: #ffffff;
   font-family: "IBM Plex Mono", monospace;
+  text-decoration: none;
 }
 
 body header nav #toggle {
@@ -6449,17 +6450,21 @@ body .temas h1 span {
   display: block;
 }
 
-body .temas .iconos-temas img {
+body .temas .todos-iconos .iconos-temas {
+  padding: 10px;
+}
+
+body .temas .todos-iconos .iconos-temas img {
   display: block;
   margin: 0 auto;
 }
 
-body .temas .iconos-temas h4 {
+body .temas .todos-iconos .iconos-temas h4 {
   font-size: 24px;
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: bold;
   margin: 16px auto;
-  width: 288px;
+  max-width: 288px;
   display: block;
   text-align: center;
 }
@@ -6476,8 +6481,6 @@ body .novedades h1 {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 36px;
   color: #ffffff;
-  height: 126px;
-  width: 288px;
   margin-top: 64px;
   margin-left: auto;
   margin-right: auto;
@@ -6682,7 +6685,15 @@ body footer ul li .telegram:before {
   body .temas h1 {
     margin-left: 15%;
   }
-  body .temas .iconos-temas {
+  body .temas .todos-iconos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .temas .todos-iconos .iconos-temas {
     display: inline;
   }
   body footer {
@@ -6692,9 +6703,10 @@ body footer ul li .telegram:before {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: space space-around;
-        -ms-flex-pack: space space-around;
-            justify-content: space space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 100px;
   }
   body footer h5 {
     display: -webkit-box;
@@ -6708,12 +6720,16 @@ body footer ul li .telegram:before {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   body footer ul li {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin: 0 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */
