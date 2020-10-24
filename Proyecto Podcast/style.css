@@ -6479,7 +6479,8 @@ body .novedades h1 {
   height: 126px;
   width: 288px;
   margin-top: 64px;
-  margin-left: 16px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
@@ -6496,7 +6497,7 @@ body .novedades input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 36px 16px 67px 16px;
+  margin: 36px auto 67px auto;
   padding: 16px 59px;
 }
 
