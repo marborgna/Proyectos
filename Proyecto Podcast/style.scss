@@ -16,6 +16,7 @@ $fa-font-path: "font/webfonts";
 @import "./font/scss/brands.scss";
 body {
     margin: 0;
+    width: 100%;
     header {
         background-color: $main-color-white;
         display: flex;
@@ -163,7 +164,7 @@ body {
                 position: relative;
                 padding-bottom: 3.5%;
                 height: 225px;
-                width: 298px;
+                width: 95%;
                 overflow: hidden;
                 margin: 11px auto;
                 iframe {
@@ -184,20 +185,17 @@ body {
             display: block;
             margin: 48px auto 0 auto;
             height: 519px;
-            width: 320px;
+            width: 90%;
             transform: translateY(-150px);
             .vertical-translation {
                 transform: translateY(-150px);
             }
         }
         .venimos {
-            width: 100%;
-            align-content: center;
-            margin-left: 5%;
-            margin-right: 5%;
             margin-bottom: 54px;
             margin-top: -150px;
             h1 {
+                margin-left: 5%;
                 font-family: $main-mono-sans;
                 font-size: $main-font-size;
                 span {
@@ -205,9 +203,10 @@ body {
                 }
             }
             p {
+                margin-left: 5%;
                 font-family: $main-mono-plex;
                 white-space: pre-line;
-                margin: 5%;
+                margin-right: 5%;
             }
         }
     }
@@ -217,7 +216,7 @@ body {
             font-size: $main-font-size;
             margin-top: 54px;
             margin-bottom: 14px;
-            margin-left: 16px;
+            margin-left: 5%;
             span {
                 display: block;
             }
@@ -414,7 +413,7 @@ body {
                     }
                 }
                 input {
-                    margin-left: 0;
+                    margin-left: 3%;
                 }
             }
         }
@@ -445,15 +444,18 @@ body {
         }
         .telefono {
             display: flex;
+            margin-left: 10%;
             .spacer {
                 max-width: 200px;
                 flex: 1;
             }
             img {
                 margin-left: 15%;
+                width: 18%;
             }
             .venimos {
                 margin-top: 0;
+                margin-left: 10%;
                 h1 {
                     span {
                         display: inline;
@@ -461,11 +463,13 @@ body {
                 }
                 p {
                     br {
-                        display: none;
+                        display: inline;
                     }
+                    width: 40%;
                     max-width: 464em;
                     line-height: 1.5em;
                     margin-left: 0;
+                    white-space: pre-line;
                 }
             }
         }
@@ -473,6 +477,7 @@ body {
             width: 100%;
             h1 {
                 margin-left: 15%;
+                margin-bottom: 4%;
                 span {
                     display: inline;
                 }
@@ -487,8 +492,9 @@ body {
         .temas {
             h1 {
                 margin-left: 15%;
+                margin-bottom: 4%;
                 span {
-                    //display: none;
+                    display: inline;
                 }
             }
             .todos-iconos {
