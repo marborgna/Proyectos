@@ -6336,8 +6336,8 @@ body .titulo .content input:hover {
 }
 
 body .episodios {
-  -webkit-clip-path: polygon(0 8%, 100% 0, 100% 92%, 0% 100%);
-          clip-path: polygon(0 8%, 100% 0, 100% 92%, 0% 100%);
+  -webkit-clip-path: polygon(0 6%, 100% 0, 100% 92%, 0% 100%);
+          clip-path: polygon(0 6%, 100% 0, 100% 92%, 0% 100%);
   background: linear-gradient(99deg, blue 0%, #0000a3 100%);
   margin-top: 24px;
   padding-top: 64px;
