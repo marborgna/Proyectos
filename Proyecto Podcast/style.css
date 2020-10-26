@@ -6375,9 +6375,8 @@ body .episodios .episodios-spacer {
 
 body .telefono img {
   display: block;
-  margin: 48px auto 0 auto;
+  margin-top: 48px;
   height: 519px;
-  width: 90%;
   -webkit-transform: translateY(-150px);
           transform: translateY(-150px);
 }
@@ -6393,7 +6392,6 @@ body .telefono .venimos {
 }
 
 body .telefono .venimos h1 {
-  margin-left: 5%;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 36px;
 }
