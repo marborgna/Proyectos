@@ -6440,7 +6440,7 @@ body .temas h1 {
   font-family: "IBM Plex Sans", sans-serif;
   margin-top: 48px;
   margin-bottom: 37px;
-  margin-left: 16px;
+  margin-left: 5%;
   display: block;
 }
 
@@ -6469,8 +6469,8 @@ body .temas .todos-iconos .iconos-temas h4 {
 
 body .novedades {
   background: linear-gradient(99deg, blue 0%, #0000a3 100%);
-  -webkit-clip-path: polygon(0 4%, 100% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(0 4%, 100% 0, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -6481,7 +6481,7 @@ body .novedades h1 {
   color: #ffffff;
   margin-top: 64px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 5%;
   text-align: center;
 }
 
