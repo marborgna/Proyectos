@@ -6394,6 +6394,7 @@ body .telefono .venimos {
 body .telefono .venimos h1 {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 36px;
+  margin-left: 5%;
 }
 
 body .telefono .venimos h1 span {
@@ -6408,11 +6409,11 @@ body .telefono .venimos p {
 }
 
 body .invitadxs h1 {
+  margin-left: 5%;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 36px;
   margin-top: 54px;
   margin-bottom: 14px;
-  margin-left: 5%;
 }
 
 body .invitadxs h1 span {
@@ -6568,6 +6569,7 @@ body footer ul li .telegram:before {
     display: none;
   }
   body header nav .sections {
+    margin-top: 22px;
     display: inline;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
