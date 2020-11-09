@@ -9,11 +9,11 @@
 .fal,
 .fad,
 .fab,
-body footer ul li .twitter,
-body footer ul li .spotify,
-body footer ul li .instagram,
-body footer ul li .facebook,
-body footer ul li .telegram {
+body footer ul li a .twitter,
+body footer ul li a .spotify,
+body footer ul li a .instagram,
+body footer ul li a .facebook,
+body footer ul li a .telegram {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -23,7 +23,7 @@ body footer ul li .telegram {
   line-height: 1;
 }
 
-body footer ul li .twitter, body footer ul li .spotify, body footer ul li .instagram, body footer ul li .facebook, body footer ul li .telegram {
+body footer ul li a .twitter, body footer ul li a .spotify, body footer ul li a .instagram, body footer ul li a .facebook, body footer ul li a .telegram {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -129,11 +129,11 @@ body footer ul li .twitter, body footer ul li .spotify, body footer ul li .insta
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left,
-body footer ul li .fa-pull-left.twitter,
-body footer ul li .fa-pull-left.spotify,
-body footer ul li .fa-pull-left.instagram,
-body footer ul li .fa-pull-left.facebook,
-body footer ul li .fa-pull-left.telegram {
+body footer ul li a .fa-pull-left.twitter,
+body footer ul li a .fa-pull-left.spotify,
+body footer ul li a .fa-pull-left.instagram,
+body footer ul li a .fa-pull-left.facebook,
+body footer ul li a .fa-pull-left.telegram {
   margin-right: .3em;
 }
 
@@ -142,11 +142,11 @@ body footer ul li .fa-pull-left.telegram {
 .far.fa-pull-right,
 .fal.fa-pull-right,
 .fab.fa-pull-right,
-body footer ul li .fa-pull-right.twitter,
-body footer ul li .fa-pull-right.spotify,
-body footer ul li .fa-pull-right.instagram,
-body footer ul li .fa-pull-right.facebook,
-body footer ul li .fa-pull-right.telegram {
+body footer ul li a .fa-pull-right.twitter,
+body footer ul li a .fa-pull-right.spotify,
+body footer ul li a .fa-pull-right.instagram,
+body footer ul li a .fa-pull-right.facebook,
+body footer ul li a .fa-pull-right.telegram {
   margin-left: .3em;
 }
 
@@ -6149,11 +6149,11 @@ readers do not read off random characters that represent icons */
 
 
 .fab,
-body footer ul li .twitter,
-body footer ul li .spotify,
-body footer ul li .instagram,
-body footer ul li .facebook,
-body footer ul li .telegram {
+body footer ul li a .twitter,
+body footer ul li a .spotify,
+body footer ul li a .instagram,
+body footer ul li a .facebook,
+body footer ul li a .telegram {
   font-family: 'Font Awesome 5 Brands';
   font-weight: 400;
 }
@@ -6320,18 +6320,29 @@ body .titulo .content p br {
   display: none;
 }
 
-body .titulo .content input {
-  display: block;
+body .titulo .content a {
   background-color: #00F3BB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-family: "IBM Plex Mono", monospace;
   height: 48px;
-  width: 288px;
-  padding: 13px 96px;
+  width: 90%;
   border: none;
-  margin: 16px auto;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 36px auto 67px auto;
+  color: #060A24;
+  text-decoration: none;
 }
 
-body .titulo .content input:hover {
+body .titulo .content a span {
+  margin: 0 auto;
+}
+
+body .titulo .content a:hover {
   background: linear-gradient(239deg, #0000fe 0%, #00f0b8 100%);
 }
 
@@ -6536,23 +6547,28 @@ body footer ul {
   padding-left: 0;
 }
 
-body footer ul li .twitter:before {
+body footer ul li a {
+  text-decoration: none;
+  color: #060A24;
+}
+
+body footer ul li a .twitter:before {
   content: "\f099";
 }
 
-body footer ul li .spotify:before {
+body footer ul li a .spotify:before {
   content: "\f1bc";
 }
 
-body footer ul li .instagram:before {
+body footer ul li a .instagram:before {
   content: "\f16d";
 }
 
-body footer ul li .facebook:before {
+body footer ul li a .facebook:before {
   content: "\f09a";
 }
 
-body footer ul li .telegram:before {
+body footer ul li a .telegram:before {
   content: "\f2c6";
 }
 
@@ -6616,8 +6632,9 @@ body footer ul li .telegram:before {
   body .titulo .content p br {
     display: inline;
   }
-  body .titulo .content input {
+  body .titulo .content a {
     margin-left: 3%;
+    width: 40%;
   }
   body .episodios h1 {
     margin-left: 15%;
