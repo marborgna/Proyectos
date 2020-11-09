@@ -6486,24 +6486,29 @@ body .novedades h1 {
   text-align: center;
 }
 
-body .novedades input {
+body .novedades a {
   background-color: #00F3BB;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-family: "IBM Plex Mono", monospace;
   height: 48px;
-  width: 288px;
+  width: 90%;
   border: none;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 36px auto 67px auto;
-  padding: 16px 59px;
+  color: #060A24;
+  text-decoration: none;
 }
 
-body .novedades input:hover {
+body .novedades a span {
+  margin: 0 auto;
+}
+
+body .novedades a:hover {
   background: linear-gradient(239deg, #0000fe 0%, #00f0b8 100%);
 }
 
@@ -6705,6 +6710,11 @@ body footer ul li .telegram:before {
   }
   body .temas .todos-iconos .iconos-temas {
     display: inline;
+  }
+  body .novedades a {
+    max-width: 288px;
+    margin: 36px auto 67px auto;
+    height: 56px;
   }
   body footer {
     display: -webkit-box;
