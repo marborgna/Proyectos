@@ -1,0 +1,46 @@
+SINCRONO / ASINCRONO.
+
+Tiempo de ejecucion: en el que se ejecuta programa, tiempo que lleva hacer instrucciones
+que nosotrxs definimos.
+
+SÍNCRONO: realiza algo, espera resultado, hace todo en orden.
+
+ASÍNCRONO: no espera resultado.
+
+CALLBACK: funcion definida y accionara cuando la ejecucion tenga resultado.
+Instrucciones que se pasan como argumento y se espera que se llame en algun momento.
+JS es lenguaje orientado a EVENTOS, se irá ejecutando a medida que escuche eventos.
+Eventos de usuario o de navegador
+buscamos NO BLOQUEAR LA PANTALLA.
+
+EX:
+SINCRONICO
+
+let primera = function () {
+    console.log('Estoy en primera');
+}
+
+let segunda = function () {
+    console.log('Estoy en segunda');
+}
+
+primera(); --> muestra 1
+segunda(); --> muestra 2
+
+
+RETRASO - ASINCRONO
+
+let primera = function () {
+    setTimeout(function (){ 
+        console.log('Estoy en primera');
+    }, 1000);   
+}
+
+let segunda = function () {
+    console.log('Estoy en segunda');
+}
+
+primera(); --> muestra 2
+segunda(); --> muestra 1
+
+

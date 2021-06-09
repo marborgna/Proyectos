@@ -1,0 +1,10 @@
+Es una implementacion de motor de JS--> V8 creado por Chrome. Está escrito en C++
+
+
+DIFERENCIA ENTRE LIBRERIA Y FRAMEWORKS
+
+LIBRERIA: conjunto/biblioteca de funciones. Ej: momentjs.com
+FRAMEWORKS: conjunto de herramientas qeu utilizo pero que el framework me impone, 
+él las ejecuta. Ej: Bootstrap, Spress
+
+MÓDULO: archivo que contiene elementos (como variables) que podría reutilizar en otro archivos

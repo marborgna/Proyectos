@@ -1,0 +1,8 @@
+OPEN API -- Swagger
+
+Documentar API Swagger Editor
+
+-- Entender la Dimension de proyecto
+-- Encontrar errores
+-- Retomar con facilidad el proyecto
+-- Facilita trabajo de otrxs programadorxs

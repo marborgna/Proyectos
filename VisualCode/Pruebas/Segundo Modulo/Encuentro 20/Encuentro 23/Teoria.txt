@@ -1,0 +1,56 @@
+ARRAYS ---> una manera de almacenar más de un dato al mismo tiempo. Tipo: objeto. 
+Puede guardar elementos de distinto tipo al mismo tiempo, y los elementos tienen 
+un indice que arranca en 0
+Ej:
+lei informacion = [1, 2, "hola mundo", true, false];
+
+
+
+FUNCION: es un procedimineto de un conjunto de sentencia que realizan una tarea. 
+Para usar una hay que definirla en algún lugar del ámbito.
+
+
+OBJETOS: es una entidad que tiene caracteristicas y puede realizar acciones (lo 
+que cambia el estado de ese objeto) (van con minuscola)
+
+CLASE: molde que te permite crear INSTANCIAS(objeto) de esa clase. Una propiedad puede
+ser otro objeto. (van con mayuscula)
+Ej: class Personas { }
+yo = new Personas; --> "yo" es un obj de tipo "Personas"
+
+
+PROPIEDAD: caracteristicas individuales que diferencian a los objetos entre si (VARIABLES)
+Ej de asignar propiedad:
+let me = {name: "Martina", apellido: "Borgna"}
+/
+me.email = "marpborgna@gmail.com";
+
+accedo a propiedad: console.log(me.name);
+
+
+METODOS: acciones que puedo realizar a los objetos. cambiar caracteristicas de los objeto
+(FUNCIONES)
+Ej:
+let me = {
+    firstname = "Martina",
+    lastname = "Borgna",
+    fullname = function(){
+        return this.firstname + " " + this.lastname;
+    }
+}
+
+CONSTRUCTORES: es un metodo (funcion) especial que se ejecuta al inicializar un objeto
+
+ej:
+class Rectangulo {
+    constructor (ancho, largo, color) {
+        this.ancho = ancho;
+        this.largo = largo;
+        this.color = color;
+    }
+}
+
+let rect = new Rectangulo(10, 20, "rojo");
+
+IF = ? -->  ? true : false. Cuando realizas una accion; 
+---> ej return (this-age >= 18) ? (<-if) true : (<-else) false;

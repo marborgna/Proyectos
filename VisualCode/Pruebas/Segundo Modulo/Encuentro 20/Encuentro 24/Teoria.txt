@@ -1,0 +1,45 @@
+FUNCIONES 
+una caja que puede recibir valores y cumplir instrucciones
+
+SCOPE: dónde mi variable va a estar "viva".
+--> local
+--> global
+
+DIFERENCIA ENTRE VAR LET Y CONST
+--> var: sí cambia el valor y el scope es global
+--> let: sí cambia y el scope es local
+--> const: no cambia.
+
+HOISTING: mover declaraciones al principio del codigo.(function y var)
+JS es un lenguaje que me permite utiliazr cosas antes de definirlas. Hay que definirlas.
+
+¿Qué function no necesitan recibir parametros?--> las que no depende de un estado exterior
+Si ya conozco los datos no es necesario qeu reciba nada-
+
+Objetos de JS --> librerias de js built-in
+
+
+DECLARACIONES DE FUNCIONES
+
+/1
+function myFunction (par1) {
+    console.log(par1);
+}
+
+/2 Statement
+let myFunction2 = function(par1) {
+    console.log(par1);
+}
+
+/3 Arrow
+let myFunction3 = par1 => console.log(par1); 
+let arrow = (par1) => { console.log(par1); }
+
+/4 IIFE (Immediately Invokable Function Expression) // Funcion anonima
+(function(){
+    let par1 = 2;
+    console.log(par1);
+})();
+
+
+LAS FUNCIONES PUEDEN PASARSE PARAMETRO

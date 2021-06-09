@@ -1,0 +1,21 @@
+{
+  "name": "acamica",
+  "version": "1.0.0",
+  "description": "Proyectos hechos en el marco del curso de Full Stack de Acámica, Segundo semestre 2020-\r Tambien hechos por mí, Martina Paula Borgna",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
+    "live": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marborgna/Proyectos.git"
+  },
+  "author": "mar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marborgna/Proyectos/issues"
+  },
+  "homepage": "https://github.com/marborgna/Proyectos#readme"
+}

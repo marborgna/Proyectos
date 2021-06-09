@@ -1,0 +1,10 @@
+BUENAS PRACTICAS
+
+validar con typeof que sea una funcion antes de ejecutarla
+
+ex:
+saludar(callback){
+    if(callback === "function"){
+        callback();
+    }
+}

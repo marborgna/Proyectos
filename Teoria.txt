@@ -1,0 +1,8 @@
+Variable: BAcket, un "lugar" donde yo almaceno. Va a cambiar
+EJ: var var1 = true;
+
+let = no debería cambiar. Vive solamente en un ambito. ayuda a que el navegador no guarde memoria de más
+
+const = constante, no va a cambiar
+
+scope = ambito donde una Variable tiene vida.

@@ -1,0 +1,61 @@
+ DOM: estructura de objetos que genera el navegador cuando se carga un documento.
+ Viene dado por el navegador.
+ Funciona para modificar cosas a tiempo real, o agregar
+
+ NODO: elementos de una lista enlazada("te podes ir moviendo"- estructura de datos)
+ jerarquía --> "arbol de nodos"- estructura de datos
+
+ acceder a nodos por: (+ especifico)ID, clase, elemento (-)-- query(pone condiciones)
+
+Sintaxis:
+element = document.getElementByTagName(name) ---> devuelve array
+
+element = document.querySelector(selectores); -- query (".azul") / ("#azul)
+la misma sintaxis de CSS
+
+
+
+
+METODOS (manera segura de accede al HTML )
+
+Modificaciones son en memoria
+COnseguir Atributos ---> element.attributes 
+COnseguir clase ---> element.className
+
+
+element.classList --> devuelve un array atributos de clase de elemento y se puede modificar
+element.classList.remove("foo");
+element.classList.add("otraclase");
+
+//si visible está presente la elimina, si no la añade
+element.classList.toggle("visible");
+
+// añadir/eliminar visible, dependiendo de la condicion i menor que 10
+element.classList.toggle("visible", i < 10 );
+
+//añadir o eliminar varias clases
+element.classList.add("foo", "bar");
+element.classList.remove("foo", "bar");
+
+// reemplazar la clase "foo" por "bar"
+element.classList.replace("foo", "bar");
+
+// trae el primer hijx
+element.firstElementChild
+
+// trae el valor de ID
+element.ID
+
+// Trae la sintaxis de HTML
+element.innerHTML
+
+// trae ultimo hijx
+element.lastElementChild
+
+// trae nombre
+element.name
+
+// Agrega un nodo como hijx
+element.appendChild(p) 
+
+NIGHT MODE---> toggle en otra pagina de style.CSS

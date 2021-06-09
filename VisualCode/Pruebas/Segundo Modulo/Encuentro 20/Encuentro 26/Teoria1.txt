@@ -1,0 +1,70 @@
+EVENTOS: mecanimos que el navegador provee por el que el usuario reaccion a inputs. 
+Los eventos estan catalogados y preestablecidos. No se generan, tienen reaccion.
+Recibimos eventos sobre objetos de DOM y asociamos reaccion
+
+Inputs: interacciones del usuario.
+
+Handlers: permite escuchar las 'alarmas'
+
+METODOS:
+<script>
+    window.addEventListener("click", () => {
+        console.log("Click detectado");
+    })
+</script>
+
+(usa function arrow)
+
+// ESCUCHAR EVENTO SOBRE ELEMENTO EN PARTICULAR
+<script>
+    let boton = document.getElementById("boton");
+    boton.addEventListener("click", () => {
+        console.log("El boton fue presionado");
+    })
+</script>
+---> Se asigna por ELEMENTO
+
+
+// on{Evento} --> asociarme directamente al eventos
+<script>
+    let boton = getElementById("boton");
+    boton.onclick = () => {
+        console.log("El boton fue presionado");
+    }
+</script>
+---> Puedo asignar mas de un evento a misma funcion
+
+NO MEZCLAR FORMAS
+
+
+REMOVE: dejar de escuchar eventos
+
+<script>
+    let boton = document.getElementById("boton");
+    function onClick () {
+        console.log ("Click detenido");
+        boton.removeEvenListener("click", onClick);
+    }
+
+    boton.addEventListener("click", onClick);
+</script>
+
+
+OBJETO DE EVENTO:
+
+ex:
+let boton = document.getElementById('boton');
+boton.addEventListener("mousedown", event => {
+    switch (event.button) {
+        case 0:
+            alert('Boton izquierdo');
+            break;
+        case 1:
+            alert('Boton del medio');
+            break;
+        case 2:
+            alert('Botón derecho');
+            break:
+    }
+});
+

@@ -1,0 +1,63 @@
+Promise.all
+--> si una falla, rechaza el conjunto
+
+
+
+DEBEN TERMINAR TODAS PARA QUE LLEGUÉ A UNA RESOLUCION
+Promise.all([promesa1, promesa2, promesa3]).then(function(respuesta){
+    console.log(respuesta);
+    
+}) catch(function(error) {
+    console.log("Error: " + error);
+}); 
+
+
+
+promise.race ---> la primer promesa que termine, exitosa o no, finaliza todo.
+
+Promise.race([promesa1, promesa2, promesa3]).then(function(respuesta){
+    console.log(respuesta);    
+}) catch(function(error) {
+    console.log("Error: " + error);
+}); 
+
+
+
+Promesas en cadena ---> .then devuelve promesa / fetch tambien
+poner un return que devuelva la proxima promesa
+
+
+promesa1.then(
+    function(respuesta){
+        console.log(respuesta);
+        return promesa2;
+}) .then(function(segunda){
+    console.log(segunda);
+    return promesa3;
+}) .then(function(tercera){
+    console.log(tercera);
+}) .catch(function(error){
+    //captura cualquier Error
+    console.log("Error: " + error);
+});
+
+
+ESTO ES MUY ENGORROSO, SE RESUELVE CON ASINCRONIA!
+
+ASINCRONIA---> async
+
+Ex 
+async function name(arguments){
+    //sentencia
+    //sentencia
+    //sentencia
+}
+
+
+
+FETCH --> nos permite realizar una llamada http para obtener información de otro punto
+Ex:
+let respuesta = fetch('URL'); // End point URL --> devulve promesa
+
+
+.JSON ---> transforma en un objeto de JS. Es asincronica

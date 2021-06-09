@@ -1,0 +1,14 @@
+Express: Framework que nos permite crear API para escuchar a cada ruta que refiramos
+
+crear API (Restful) para que otrxs la puedan consumir
+/pet -> path(ruta) o serie de operaciones
+GET, POST, PATCH, PUT => Http Verb, Operation
+
+ENDPOINT => Ej. path con operacion POST
+
+Exigir usar HTTPS(certificado) / HTTP no es del todo segura la info no viaja encriptada, es texto plano
+
+'let's encrypt' =>certificado de seguridad gratuito
+
+
+semver.org => Versiones Semanticas de Sofwar

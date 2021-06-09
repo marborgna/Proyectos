@@ -1,0 +1,31 @@
+openapi: 3.0.1
+info:
+  title: Encuentro 42 DWFS-ONLINE-5
+  description: 'rthis is a test'
+  version: 1.0.0
+servers:
+  - url: http://localhost:3000
+paths:
+  /:
+    get:
+      summary: Get items
+      operationId: getItems
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Pet'
+        '400':
+          description: Invalid status value
+          content: {}
+components:
+  schemas:
+    ApiResponse:
+      type: object
+      properties:
+      msg:
+        type: string

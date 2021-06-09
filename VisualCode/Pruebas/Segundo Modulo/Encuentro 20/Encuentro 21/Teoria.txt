@@ -1,0 +1,9 @@
+let miVariable = null; ---> la variable no tiene valor, es la navegador
+undefined
+
+tipo de variable ---> typeof
+vairable que se crea sin contenido es undefined
+
+Vairables pueden CAMBIAR de TIPO
+
+min 25:44

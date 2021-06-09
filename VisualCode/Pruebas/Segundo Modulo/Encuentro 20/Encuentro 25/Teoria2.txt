@@ -1,0 +1,27 @@
+LOCAL STORAGE: funcionalidad que nos provee info. está en cada navegador, guarda datos.
+(caché). Guarda info NO importante, preferencias básicas.. No se pierde cuando se cierra
+navegador. NO ESTA GARANTIZADO QUE NO SE BORRE, tiene un limite. Actua del lado del 
+NAVEGADOR. No se puede guardar obj con obj dentro. 
+
+COOKIES: archivos de text que quedan. preferencias se guardan acá. ESTAN ENCRIPTADAS.
+
+METODOS: 
+localStorage.
+
+// Agregando item
+localStorage.setItem('nombre', 'Harry'); --> clave / valor
+localStorage.removeItem('nombre');
+localStorage.setItem('nombreEntero', 'Harry');
+console.log('El nombre alojado en el localStorage es: ' + localStorage.getItem('nombreEntero'));
+
+
+DARK MODE EX:
+localStorage.setItem('darkMode', true);
+
+ let darkMode = localStorage.getItem('darkMode');
+
+ if (darkMode) {
+     // activar css dark mode
+ } else {
+     //activar css light mode
+ }

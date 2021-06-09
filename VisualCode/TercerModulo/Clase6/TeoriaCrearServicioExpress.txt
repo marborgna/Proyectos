@@ -1,0 +1,11 @@
+Cada vez que se usa Node
+
+1) npm init --yes ---> package.json
+
+Cada vez que se usa por primera vez en cada carpeta Express porque se hace app web
+
+2) npm i express body-parser --> crea key dentro de package.json con paquetes que acabo de instalar. Se instala por carpeta
+3) server.js ---> incluir codigo de CrearServidorExpress.js
+
+2') npm i -g nodemon ---> para instalar express global
+

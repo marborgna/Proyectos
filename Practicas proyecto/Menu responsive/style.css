@@ -1,0 +1,42 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body button {
+  width: 80px;
+  font-style: none;
+  background-color: transparent;
+  border: none;
+  list-style: red;
+}
+
+body nav {
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
+}
+
+body nav ul {
+  list-style: none;
+}
+
+body nav ul li :hover {
+  background-color: #d3a2a2;
+}
+
+body nav ul li a {
+  text-decoration: none;
+}
+
+body nav ul li a :hover {
+  color: #85652b;
+}
+
+body nav .enable-menu {
+  display: block;
+}
+
+body nav .disable-menu {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

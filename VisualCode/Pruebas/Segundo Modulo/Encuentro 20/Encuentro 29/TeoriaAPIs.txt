@@ -1,0 +1,8 @@
+APIs: interfaz --> contrato
+Expongo cómo quiero que me llamen, "lo de atrás" puede cambiar, la manera de llamarme
+es la misma
+
+
+Interpolacion
+${} --> todo lo que esta dentro es VARIABLE
+transforma daros en string

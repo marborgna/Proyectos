@@ -1,0 +1,63 @@
+PROPAGACIÓN (buble)
+El elemento más especifico(hijx) se ejecuta su handlers primero
+
+EX:
+<script>
+    window.addEventListener("click", () => {
+        console.log("Segundo evento");
+    })
+
+    document.body.addEventListener("click", () => {
+        console.log("Primer evento");
+    })
+</script>
+
+
+PARAR PROPAGACION --> agrego un click en el body y freno
+stopPropagation()
+
+EX:
+<script>
+    window.addEventListener("click", () => {
+        console.log("Nunca se ejecutará");
+    })
+
+    document.body.addEventListener("click", () => {
+        console.log("Se ejecutará");
+        event.stopPropagation();
+    })
+</script>
+
+"Cuanto más especifico es se ejecuta PRIMERO"
+
+
+TARGET: refiere al nodo en donde se originó el evento. Sirve para saber qué botton 
+se apreto
+event.target
+
+EX:
+<button>A</button>
+<button>B</button>
+<script>
+    document.body.addEventListener("click", event => {
+        if (even.target.nodeName == "BUTTON") {
+            console.log("Click", event.target.textContent);
+        }
+    })
+</script>
+
+
+EVENTOS que se pueden capturar: 
+(listado completo en developer.mozilla.org)
+
+click
+copy(cuando el usuario copia)
+Cut
+dblclick: doble click
+focus: cuando se hace foco
+keydown: cuando presiona una tecla
+keyup: cuando suelta una tecla
+mousedown: presiona click de mouse (dif con click: periodo de tiempo mayor)
+mouseup: cuando suelta el click del mouse
+mouseover: cuando ingresa a area del elemento
+paste: cuando pega contenido

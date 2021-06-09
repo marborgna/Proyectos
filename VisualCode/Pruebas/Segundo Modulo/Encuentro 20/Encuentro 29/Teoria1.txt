@@ -1,0 +1,24 @@
+PROMESAS --> objetos que permiten trabajar de forma asincronica.
+Estados: Pendiente(se está ejecutando), Resuelta(finaliza satisfactoriamente),
+Rechazada(falló)
+
+Parametros: resolve, reject --> son callbacks(funciones)
+
+Ex: let promesa = new Promise(function (resolve, reject)) {
+    if(true){
+        resolve('La promesa finalizó correctamente');
+    }else{
+        reject('Ha ocurrido un error');
+    }
+});
+
+promesa
+    .then(function (response){
+        console.log("Respuesta: " + response)
+    })
+    .catch(function (error){
+        console.log("Error: " + error)
+    })
+    
+
+Metodo de llamada de la promesa: .then --> toma como parametro una funcion que hace algo

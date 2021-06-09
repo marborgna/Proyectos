@@ -1,0 +1,18 @@
+CREACION  DE API 
+
+Estructura URL
+http://banconacion.ar/v1/exchange
+Version: /v1
+Operacion: /exchange
+
+
+GET https://banconacion.ar/v1/exchange/{id}
+POST http://banconacion.ar/v1/exchange
+body: {
+    "source": "Acamica",
+    "target": "Universidad X",
+    "amount": 1222
+}
+
+
+GET https://banconacion.ar/v1/users

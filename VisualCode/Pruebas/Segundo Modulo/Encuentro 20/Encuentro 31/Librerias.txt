@@ -1,0 +1,15 @@
+LIBRERIAS
+--> conjuntos de funcionalidades que podemos acceder para resolver
+ problemas sin tener que escribir codigo de 0. De dá herramienta para solucionar
+
+ FRAMEWORK
+ --> te da conjunto de trabajo
+
+
+Como agregar librerias -->
+* descargandola, de forma local
+* Usando CDN (con URL) --> ESTA ES MEJOR si no la hice yo y se actualiza sola
+
+
+ JQUERY.com --> trajo el llamar con $
+ MOMENTjs --> facilita fechas

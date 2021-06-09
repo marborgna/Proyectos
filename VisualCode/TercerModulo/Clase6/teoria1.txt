@@ -1,0 +1,7 @@
+Middleware es el intermediario entre la peticion y el servidor
+expressjs.com ---> guía de casos particulares
+
+Globales:
+Particulares:
+
+Cuando hacemos una URL estamos haciendo una peticion HTTP, un requist y una peticion GET
